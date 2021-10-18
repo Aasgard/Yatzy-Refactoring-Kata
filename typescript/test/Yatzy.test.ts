@@ -91,7 +91,6 @@ describe('Four of a kind', () => {
   it('scores the sum of the four of the kind', () => {
     assert.strictEqual(12, Yatzy.four_of_a_kind(3, 3, 3, 3, 5));
     assert.strictEqual(20, Yatzy.four_of_a_kind(5, 5, 5, 4, 5));
-    assert.strictEqual(9, Yatzy.three_of_a_kind(3, 3, 3, 3, 3));
   });
 });
 
@@ -115,5 +114,6 @@ describe('Full house', () => {
   it('scores the sum of the full house', () => {
     assert.strictEqual(18, Yatzy.fullHouse(6, 2, 2, 2, 6));
     assert.strictEqual(0, Yatzy.fullHouse(2, 3, 4, 5, 6));
+    assert.strictEqual(16, Yatzy.fullHouse(4, 4, 2, 4, 2));
   });
 });
